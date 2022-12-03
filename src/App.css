@@ -1,0 +1,364 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-float infinite 3s ease-in-out;
+  }
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.App-link {
+  color: rgb(112, 76, 182);
+}
+
+@keyframes App-logo-float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+button {
+  font-size: calc(10px + 2vmin);
+}
+
+.ol{
+  margin-top: 120px;
+}
+
+.search-box input{
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0;
+  width: 0;
+  transition: all 0.5s;
+}
+.search-box input{
+  width: 140px;
+  height: 35px;
+  
+  border: none;
+  padding-left: 10px;
+  border-bottom: 1px solid black;
+}
+
+.acc {
+  display: flex;
+  align-items: center;
+}
+
+#signup::after, #username::after {
+  content: "";
+  width: 10px;
+  border-right: 5px solid #fff;
+  padding-left: 10px;
+  
+}
+
+#signin, #logout {
+  padding-left: 10px;
+}
+
+.logo {
+  height: 32px;
+  margin: 16px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.site-layout .site-layout-background {
+  background: #fff;
+}
+  [data-theme="dark"] .site-layout .site-layout-background {
+    background: #141414;
+}
+
+
+/* From cssbuttons.io by @westitan */
+.button {
+  position: relative;
+  padding: 19px 36px;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  border-radius: 40px;
+  border: none;
+ }
+ 
+ .button .span {
+  position: relative;
+  color: #fff;
+  font-family: Arial;
+  letter-spacing: 8px;
+  z-index: 1;
+ }
+ 
+ button .liquid {
+  position: absolute;
+  top: -80px;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background: #a80a0a;
+  box-shadow: inset 0 0 50px rgba(181, 210, 16, 0.5);
+  transition: .5s;
+ }
+ 
+ .button .liquid::after,
+ .button .liquid::before {
+  content: '';
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -75%);
+  background: #fff;
+ }
+ 
+ .button .liquid::before {
+  border-radius: 45%;
+  background: rgba(20, 20, 20, 1);
+  animation: animate 5s linear infinite;
+ }
+ 
+ .button .liquid::after {
+  border-radius: 40%;
+  background: rgba(3, 6, 84, 0.5);
+  animation: animate 10s linear infinite;
+ }
+ 
+ .button:hover .liquid {
+  top: -120px;
+ }
+ 
+ @keyframes animate {
+  0% {
+   transform: translate(-50%, -75%) rotate(0deg);
+  }
+ 
+  100% {
+   transform: translate(-50%, -75%) rotate(360deg);
+  }
+ }
+
+.avatar-item {
+  margin-right: 24px;
+  margin-top: 30px;
+  width: 120%;
+}
+.icon-cart{
+  
+}
+
+/* [class*='-col-rtl'] .avatar-item {
+  margin-right: 0;
+  margin-left: 24px;
+} */
+
+
+.btn-cart, .home{
+  font-size: 16px;
+  padding: 1em 3.3em;
+  transform: perspective(200px) rotateX(15deg);
+  color: white;
+  font-weight: 900;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(0deg, rgba(63,94,251,1) 0%, rgba(70,135,252,1) 100%);
+  box-shadow: rgba(63,94,251,0.2) 0px 40px 29px 0px;
+  will-change: transform;
+  transition: all 0.3s;
+  border-bottom: 2px solid rgba(70,135,252,1);
+ }
+ 
+ .btn-cart:hover {
+  transform: perspective(180px) rotateX(30deg) translateY(2px);
+ }
+ 
+ .btn-cart:active {
+  transform: perspective(170px) rotateX(36deg) translateY(5px);
+ }
+
+
+ /* From cssbuttons.io */
+.btnAddToCart {
+  font-size: 17px;
+  font-family: inherit;
+  font-weight: 700;
+  padding: 4px;
+  border-radius: 20px;
+  border: none;
+  color: black;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  background: linear-gradient(0deg, rgba(255,213,0,1) 0%, rgba(255,213,0,1) 47%, rgb(198, 4, 4) 47%, rgb(198, 4, 4) 100%);
+ }
+ 
+ .btnAddToCart .button-content {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 0.7em 1.5em;
+  padding-left: 1.2em;
+  border-radius: 16px;
+ }
+ 
+ .btnAddToCart svg {
+  width: 22px;
+  height: 22px;
+  margin-right: 6px;
+  color: #ff0000;
+  transition: transform 0.3s;
+ }
+ 
+ .btnAddToCart:hover svg {
+  transform: scale(1.2);
+ }
+ 
+ .user:hover .abc{
+  display: inline-block;
+}
+
+.sort:hover .sort_down{
+  display: inline-block;
+}
+
+/* From uiverse.io by @xXJollyHAKERXx */
+#homeOrderSuccess {
+  font-size: 17px;
+  color: white;
+  background-color: transparent;
+  height: 45px;
+  width: 100px;
+  border: 2.5px solid;
+  transition: 0.3s all;
+  background-image: linear-gradient(45deg,purple,red,orange,red,purple);
+  background-size: 500% 200%;
+  background-position: 25% 50%;
+  font-family: inherit;
+  font-weight: 500;
+ }
+ 
+ #homeOrderSuccess:hover {
+  box-shadow: none;
+  background-color: rgb(92, 92, 92);
+  animation: rainbow 1s 1;
+  transform: scale(1.13);
+  border-radius: 30px;
+  background-position: 70% 50%;
+ }
+ 
+ #homeOrderSuccess:active {
+  transform: scale(1.2);
+ }
+
+
+ /* From uiverse.io */
+#homeOrderDetail {
+  --glow-color: rgb(217, 176, 255);
+  --glow-spread-color: rgba(191, 123, 255, 0.781);
+  --enhanced-glow-color: rgb(231, 206, 255);
+  --btn-color: rgb(100, 61, 136);
+  border: .25em solid var(--glow-color);
+  padding: 1em 3em;
+  color: var(--glow-color);
+  font-size: 15px;
+  font-weight: bold;
+  background-color: var(--btn-color);
+  border-radius: 1em;
+  outline: none;
+  box-shadow: 0 0 1em .25em var(--glow-color),
+         0 0 4em 1em var(--glow-spread-color),
+         inset 0 0 .75em .25em var(--glow-color);
+  text-shadow: 0 0 .5em var(--glow-color);
+  position: relative;
+  transition: all 0.3s;
+ }
+ 
+ #homeOrderDetail::after {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  top: 120%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--glow-spread-color);
+  filter: blur(2em);
+  opacity: .7;
+  transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+ }
+ 
+ #homeOrderDetail:hover {
+  color: var(--btn-color);
+  background-color: var(--glow-color);
+  box-shadow: 0 0 1em .25em var(--glow-color),
+         0 0 4em 2em var(--glow-spread-color),
+         inset 0 0 .75em .25em var(--glow-color);
+ }
+ 
+ #homeOrderDetail:active {
+  box-shadow: 0 0 0.6em .25em var(--glow-color),
+         0 0 2.5em 2em var(--glow-spread-color),
+         inset 0 0 .5em .25em var(--glow-color);
+ }
